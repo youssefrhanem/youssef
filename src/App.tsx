@@ -3,6 +3,7 @@ import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import AppointmentPage from "./components/appointments/AppointmentPage";
 import PatientPage from "./components/patients/PatientPage";
+import InventoryPage from "./components/inventory/InventoryPage";
 import routes from "tempo-routes";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/appointments" element={<AppointmentPage />} />
           <Route path="/patients" element={<PatientPage />} />
+          <Route path="/inventory" element={<InventoryPage />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
